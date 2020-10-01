@@ -10,20 +10,26 @@
     <title>Qoute Gerator</title>
 </head>
 <body>
-    <div class="quote-container" id="quote-container">
-        <!--Quote-->
-        <div class="quote-text">
-            <i class="fas fa-quote-left"></i>
-            <span id="quote">Be yourself, everyone else is already taken.</span>
+    <div class="container">
+        <div class="quote-container" id="quote-container">
+            <!--Quote-->
+            <div class="quote-text">
+                <i class="fas fa-quote-left"></i>
+                <span id="quote"></span>
+            </div>
+            <!--author-->
+            <div class="qoute-author" id="qoute-author"></div>
+            <div class="button-container">
+                <button class="twitter-button" id="twitter"title="tweet this!">
+                    <i class="fab fa-twitter"></i>
+                </button>
+                <button id="new-quote">New Quote</button>
+            </div>
         </div>
-        <!--author-->
-        <div class="qoute-author">Sagar Bakshi</div>
-        <div class="button-container">
-            <button class="twitter-button" id="twitter"title="tweet this!">
-                <i class="fab fa-twitter"></i>
-            </button>
-            <button id="new-quote">New Quote</button>
-        </div>
+    </div>
+    <div class="loader" id="loader"></div>
+    <div class="footer">
+        &copy;sagar bakshi
     </div>
     <script src="index.js"></script>
 </body>
