@@ -35,10 +35,9 @@ async function getQuote() {
 
         quoteText.innerText = data.quoteText;
         removeLoading();
-    }catch (e){
+    }catch (error){
         // //onLoad
-        getQuote();
-        console.log(e);
+        console.log(error);
     }
 }
 
@@ -60,4 +59,3 @@ twitterBtn.addEventListener('click',tweetQuote);
 
 //onLoad
 // getQuote();
-loading();
